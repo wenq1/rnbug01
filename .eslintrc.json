@@ -1,0 +1,75 @@
+{
+    "env": {
+        "es6": true,
+        "node": true,
+        "browser": true,
+        "react-native/react-native": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react-native/all"
+    ],
+    "plugins": [
+        "react",
+        "react-native"
+    ],
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2018,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+
+    "rules": {
+        "indent": [
+            0,
+            8,
+            {"FunctionExpression": {"body": 1, "parameters": "first"}}
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "single",
+            {"allowTemplateLiterals": true}
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "no-console": [
+            "error",
+            {"allow": ["log", "error"]}
+        ],
+        "no-empty": [
+            "error",
+            {"allowEmptyCatch": true}
+        ],
+        "require-yield": [
+            0
+        ],
+        "no-constant-condition": [
+            0,
+            {"checkLoops": false}
+        ],
+        "no-unused-vars": [
+            "error",
+            {"varsIgnorePattern": "React", "args": "none"}
+        ],
+        "react/jsx-uses-vars": 2,
+        "react-native/no-unused-styles": 0,
+        "react-native/no-inline-styles": 0,
+        "react-native/no-color-literals": 0,
+        "react-native/no-raw-text": 0,
+        "react-native/sort-styles": 0,
+        "react-native/split-platform-components": 2
+    },
+    "globals": {
+        "_":    true
+    }
+}
+
